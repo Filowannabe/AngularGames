@@ -1,0 +1,21 @@
+<h1 class="finding-main-title">Finding: <small>{{term}}</small></h1>
+<hr>
+
+<div class="row" *ngIf="videoGames.length === 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            There are not results with {{term}}
+        </div>
+    </div>
+</div>
+
+<div class="animate__animated animate__fadeInLeft card-columns card-finded-body mb-5">
+    <div class="card animated fadeIn fast" *ngFor="let videoGame of videoGames; let i = index">
+        <img [src]="videoGame.img" [alt]="videoGame.name">
+        <div class="card-body">
+            <h4 class="card-title">{{videoGame.name}}</h4>
+            <p class="card-text">{{videoGame.description}}</p>
+            <p class="card-text"><small class="text-muted">{{videoGame.description}}</small></p>
+        </div>
+    </div>
+</div>

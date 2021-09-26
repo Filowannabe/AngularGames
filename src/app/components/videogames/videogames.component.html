@@ -1,0 +1,36 @@
+<form class="myModal">
+</form>
+
+<div class="video-games-banner">
+    <img src="../../../assets/banner.gif">
+</div>
+
+<div class="card-columns videogame-main-card-container">
+
+    <h1 class="videogames-main-title">Filowannabe's Top Games</h1>
+    <div class="icon-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="196" height="196" fill="#fff" class="bi bi-joystick"
+            viewBox="0 0 16 16">
+            <path
+                d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z" />
+            <path
+                d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z" />
+        </svg>
+    </div>
+    <div class="card videogames-card" style="width: 18rem;" *ngFor="let videoGame of videoGames; let i =index">
+        <img [src]="videoGame.img" class="card-img-top" [alt]="videoGame.name">
+        <div class="card-body">
+            <h3 class="card-title"><strong>{{videoGame.name}}</strong></h3>
+            <p class="card-text"><strong>{{videoGame.release}}</strong></p>
+            <p class="card-text"><small class="text-muted"><strong>{{videoGame.console}}</strong></small></p>
+            <button (click)="goVideoGame(i)" class="btn btn-success" type="button"><Strong>See more</Strong></button>
+            <button (click)="showModal(videoGame)" class="btn btn-danger" type="button"><Strong>Modal</Strong></button>
+        </div>
+
+    </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#e7008a" fill-opacity="1"
+        d="M0,192L26.7,170.7C53.3,149,107,107,160,90.7C213.3,75,267,85,320,117.3C373.3,149,427,203,480,240C533.3,277,587,299,640,282.7C693.3,267,747,213,800,197.3C853.3,181,907,203,960,224C1013.3,245,1067,267,1120,229.3C1173.3,192,1227,96,1280,53.3C1333.3,11,1387,21,1413,26.7L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+    </path>
+</svg>

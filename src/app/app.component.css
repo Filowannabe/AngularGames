@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+.app-body {
+  background-color: #4618ac;
+}
+* {
+  overflow: hidden !important;
+}
+
+@media (max-width: 900px) {
+  * {
+    overflow-y: auto !important;
+  }
+}

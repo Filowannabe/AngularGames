@@ -1,0 +1,44 @@
+
+
+.videogames-card {
+  margin-left: 20px;
+  border: 2px solid #2d0d86;
+  box-shadow: 2px 2px 10px;
+}
+.video-games-banner{
+  margin-top: -16px !important;
+}
+.video-games-banner img{
+  width: 100% !important;
+}
+
+.videogames-card img{
+  height:200px !important;
+  width:100% !important;
+}
+.videogames-main-title {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+.videogame-main-card-container {
+  display: grid;
+  background: url();
+  margin: 30px;
+  grid-auto-rows: 25rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 5rem;
+}
+.card-body{
+  color: #fff;
+  font-weight: bold;
+  background-color: #24105A;
+}
+@media (max-width: 900px) {
+  .videogames-main-title {
+    display: none;
+  }
+  .icon-title{
+    display:none;
+  }
+}

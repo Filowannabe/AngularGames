@@ -1,0 +1,14 @@
+<div class="animate__animated animate__fadeInLeft row animated fadeIn fast game-description-body">
+    <div class="col-md-4">
+        <img [src]="videoGame.img" class="img-fluid" [alt]="videoGame.name">
+        <br><br>
+        <a [routerLink]="['/videogames']" class="btn btn-danger btn-block">Go back</a>
+    </div>
+    <div class="col-md-8">
+        <h3>{{videoGame.name}}</h3>
+        <hr>
+        <p>{{videoGame.description}}</p>
+        <img *ngIf="videoGame.console === 'PS4'" class="logo" src="../../../assets/PS4.webp">
+        <img *ngIf="videoGame.console === 'XBOX'" class="logo" src="https://cdn.iconscout.com/icon/free/png-256/xbox-9-226414.png">
+    </div>
+</div>

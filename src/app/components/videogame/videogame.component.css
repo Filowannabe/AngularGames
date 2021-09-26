@@ -1,0 +1,13 @@
+.game-description-body {
+  color: #fff;
+  font-weight: bold;
+  margin: 200px 100px;
+}
+
+@media (max-width: 900px) {
+  .game-description-body {
+    color: #fff;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+}

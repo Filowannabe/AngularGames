@@ -1,0 +1,19 @@
+.finding-main-title {
+  margin: 0 20px;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+}
+.card-finded-body {
+  margin: 0 200px;
+}
+.card-finded-body img {
+  width: 100% !important;
+  height: 900px !important;
+}
+
+@media (max-width: 900px) {
+  .card-finded-body {
+    margin: 0 0;
+  }
+}

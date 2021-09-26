@@ -1,0 +1,25 @@
+<div (click)="toggleSideBar($event)" class="menu-btn">
+  <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-list"
+    viewBox="0 0 16 16">
+    <path fill-rule="evenodd"
+      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+  </svg>
+</div>
+<nav class="nav-main">
+  <ul class="nav-menu">
+    <li> <a href="**" class="functionaries-li"><img class="nav-home-img" src="../../../assets/turtle.png"></a></li>
+    <li><a href="**" class="functionaries-li">Home</a></li>
+    <li><a href="videogames" class="incomes-li"><i class="fa fa-archive" aria-hidden="true"></i> Videogames</a></li>
+    <li><a href="about" class="functionaries-li"><i class="fa fa-users" aria-hidden="true"></i>About</a></li>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control form-search-input mt-2 mr-sm-2" type="search" placeholder="Search"
+        (input)="findVideoGame($event,findText.value)" #findText>
+    </form>
+    <ul class="navmenu-right">
+      <li>
+        <a href="">
+        </a>
+      </li>
+    </ul>
+  </ul>
+</nav>
