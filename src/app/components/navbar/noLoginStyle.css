@@ -1,0 +1,5 @@
+@media (max-width: 900px) {
+  .nav-main .nav-menu-no-login {
+    display: none !important;
+  }
+}

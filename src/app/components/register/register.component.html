@@ -1,0 +1,21 @@
+<div class="container mx-auto my-5">
+    <h2>Register</h2>
+    <form id="register-form" (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <span *ngIf="form.submitted && form.controls['email'].errors" class="text-danger animated fadeIn">El correo es
+            obligatorio</span>
+        <div class="form-group mb-3">
+            <label for="email-input">Email address</label>
+            <input type="email" class="form-control" id="email-input" name="email" placeholder="Enter email"
+                [(ngModel)]="user.email" autocomplete="off" required>
+        </div>
+
+        <span *ngIf="form.submitted && form.controls['password'].errors" class="text-danger animated fadeIn">El pass es
+            obligatorio</span>
+        <div class="form-group mb-3">
+            <label for="password-input">Password</label>
+            <input type="password" class="form-control" id="password-input" name="password" placeholder="Password"
+                [(ngModel)]="user.password" autocomplete="off" required>
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+</div>

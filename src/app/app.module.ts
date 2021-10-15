@@ -13,6 +13,13 @@ import { HomeComponent } from './components/home/home.component';
 //services
 import { VideoGameServiceService } from './services/videogame/video-game-service.service';
 import { FooterComponent } from './components/footer/footer.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,11 +30,17 @@ import { FooterComponent } from './components/footer/footer.component';
     VideogamesComponent,
     AboutComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     VideoGameServiceService

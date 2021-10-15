@@ -5,7 +5,11 @@ import { VideogamesComponent } from './components/videogames/videogames.componen
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { FinderComponent } from './components/finder/finder.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 const routes: Routes = [
+  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'videogame/:id', component: VideogameComponent },
   { path: 'videogames', component: VideogamesComponent },
   { path: 'about', component: AboutComponent },

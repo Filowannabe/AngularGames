@@ -67,8 +67,7 @@ nav-main ul li a:hover {
 }
 @media (max-width: 900px) {
   .menu-btn {
-    display: block;
-    font-size: 40px;
+    display: block !important;
   }
   .form-search-input {
     background-color: #000;
@@ -79,7 +78,7 @@ nav-main ul li a:hover {
     color: #fff;
   }
   .nav-main ul.nav-menu {
-    display: block;
+    display: block !important;
     position: absolute;
     top: 0;
     left: 0;

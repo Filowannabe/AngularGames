@@ -1,0 +1,10 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+#register-form {
+    margin:115px;
+}
+#register-form input {
+    color: #000;
+}
